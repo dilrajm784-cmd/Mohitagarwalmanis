@@ -1,161 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRADE WITH
+MOHIT AGRAWAL ( SEBI REGISTERED )</title>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;_fbq.push=n;_fbq.loaded=!0;_fbq.version='2.0';
+    _fbq.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '1424719289531653'); 
+    fbq('track', 'PageView');
+    </script>
 
-<title>Trading Community</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f7fa;
+            color: #1e293b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 15px;
+        }
+        .container {
+            width: 100%;
+            max-width: 420px;
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 20px 20px 30px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}
-(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+        /* Online Badge */
+        .online-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .dot {
+            width: 8px;
+            height: 8px;
+            background-color: #2e7d32;
+            border-radius: 50%;
+        }
 
-fbq('init', '2027397264819185');
-fbq('track', 'PageView');
-fbq('track', 'ViewContent');
-</script>
+        /* Profile Box */
+        .profile-img-box {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            padding: 3px;
+            border: 2px solid #e2e8f0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .profile-img-box img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
 
-<style>
-body{
-margin:0;
-font-family:Arial;
-text-align:center;
-color:white;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-}
+        /* Titles */
+        h1 {
+            color: #0f172a;
+            font-size: 20px;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+        .tagline {
+            color: #0284c7;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .rating {
+            color: #eab308;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .rating-text {
+            color: #64748b;
+            font-weight: 500;
+        }
 
-/* TOP BAR */
-.topbar{
-background:#ffd700;
-color:#000;
-padding:12px;
-font-weight:900;
-font-size:17px;
-}
+        /* CTA Button */
+        .cta-btn {
+            display: block;
+            width: 100%;
+            background-color: #2563eb;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 16px;
+            border-radius: 12px;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+            transition: transform 0.1s;
+            margin-bottom: 20px;
+        }
+        .cta-btn:active {
+            transform: scale(0.98);
+        }
 
-/* PROFILE */
-.profile{
-margin-top:25px;
-}
-.profile img{
-width:130px;
-height:130px;
-border-radius:50%;
-border:5px solid #ffd700;
-}
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 25px;
+        }
+        .stat-card {
+            background: #f8fafc;
+            border: 1px solid #f1f5f9;
+            padding: 12px 8px;
+            border-radius: 12px;
+        }
+        .stat-number {
+            color: #0284c7;
+            font-size: 18px;
+            font-weight: 800;
+        }
+        .stat-label {
+            color: #475569;
+            font-size: 12px;
+            margin-top: 2px;
+        }
 
-/* TEXT */
-.title{
-font-size:24px;
-font-weight:900;
-margin-top:10px;
-color:#ffd700;
-}
-.subtitle{
-font-size:16px;
-font-weight:700;
-}
-.counter{
-margin-top:8px;
-font-weight:700;
-}
+        /* Main Offer Box */
+        .offer-title {
+            color: #0f172a;
+            font-size: 18px;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+        .offer-title span {
+            color: #0284c7;
+        }
+        .offer-sub {
+            color: #0f172a;
+            font-size: 15px;
+            font-weight: 800;
+            margin-bottom: 8px;
+        }
+        .offer-desc {
+            color: #64748b;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
 
-/* BOX */
-.box{
-background:rgba(0,0,0,0.4);
-margin:12px 20px;
-padding:12px;
-border-radius:10px;
-font-weight:700;
-}
+        /* Limited Tag */
+        .limited-tag {
+            background: #fff7ed;
+            color: #c2410c;
+            border: 1px dashed #ffedd5;
+            padding: 10px;
+            border-radius: 25px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
 
-/* BUTTON */
-.join-btn{
-background:#ffd700;
-color:#000;
-padding:16px;
-margin:20px;
-border-radius:12px;
-font-size:18px;
-font-weight:900;
-cursor:pointer;
-animation:pulse 1.5s infinite;
-}
+        /* Features List Box */
+        .feature-item {
+            background: #ffffff;
+            border: 1px solid #f1f5f9;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            padding: 14px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1e293b;
+        }
 
-@keyframes pulse{
-0%{transform:scale(1)}
-50%{transform:scale(1.05)}
-100%{transform:scale(1)}
-}
-
-/* ADS */
-.ads{
-margin:20px 0;
-}
-.ads a{
-background:black;
-color:#ffd700;
-padding:10px 18px;
-border-radius:20px;
-text-decoration:none;
-font-size:13px;
-}
-
-/* DISCLAIMER */
-.disclaimer{
-background:#000;
-color:#ccc;
-font-size:12px;
-padding:14px;
-line-height:1.6;
-}
-</style>
+        /* Disclaimer */
+        .disclaimer {
+            color: #94a3b8;
+            font-size: 11px;
+            line-height: 1.4;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        .managed-tag {
+            color: #64748b;
+            font-size: 12px;
+        }
+        .managed-tag span {
+            color: #0284c7;
+            font-weight: 600;
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="profile">
-<img src="profile.jpg" alt="Profile">
-</div>
+    <div class="container">
+        <!-- Online Status -->
+        <div class="online-badge">
+            <span class="dot"></span> 5,947 Traders Online Now
+        </div>
 
-<div class="title">Trade With Mohit Agrawal</div>
-<div class="subtitle">Market Insights & Learning</div>
-<div class="counter">👥 2,300+ traders joined today</div>
+        <!-- Profile Image -->
+        <div class="profile-img-box">
+            <img src="profile.png" alt="TRADE WITH
+MOHIT AGRAWAL">
+        </div>
 
-<div class="box">📊 Market Analysis & Learning</div>
-<div class="box">📈 Intraday & Options Discussion</div>
-<div class="box">📚 14+ Years Market Experience</div>
+        <!-- Header -->
+        <h1>TRADE WITH
+MOHIT AGRAWAL<br><span style="font-size: 14px; color: #475569;">( SEBI REGISTERED )</span></h1>
+        <div class="tagline">🏆 India's No.1 Stock Market Channel</div>
+        
+        <!-- Rating -->
+        <div class="rating">
+            ★★★★★ <span class="rating-text">4.9/5 (2340 Reviews)</span>
+        </div>
 
-<div class="join-btn" id="joinBtn">JOIN TELEGRAM CHANNEL</div>
+        <!-- Top CTA -->
+        <button class="cta-btn" onclick="redirectToTelegram()">
+            Join Free Telegram Channel →
+        </button>
 
-<div class="ads">
-<a href="https://t.me/+GZeKfXdd9lIxZTJl">Advertised by elitemarketing.tech</a>
-</div>
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">50K+</div>
+                <div class="stat-label">Members</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Years</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">95%</div>
+                <div class="stat-label">Accuracy</div>
+            </div>
+        </div>
 
-<script>
-const tgLink="https://t.me/+FbqZCLER6y4zYTBl";
+        <!-- Offer Section -->
+        <div class="offer-title">Get <span>FREE</span> Daily Calls</div>
+        <div class="offer-sub">for NIFTY, BANKNIFTY & STOCK OPTIONS</div>
+        <div class="offer-desc">Join thousands of traders getting daily market analysis</div>
 
-document.getElementById("joinBtn").addEventListener("click",function(){
-fbq('track','Lead',{ value:10, currency:'INR' });
-window.location.href = tgLink;
-});
-</script>
+        <!-- Alert Tag -->
+        <div class="limited-tag">
+            🔥 Limited FREE Access Available
+        </div>
 
-<div class="disclaimer">
-<strong>Disclaimer:</strong><br>
-This community is for educational and informational purposes only.
-We do not provide financial or investment advice.
-Trading in financial markets involves risk.
-Always consult a qualified financial advisor before making any investment decisions.
-</div>
+        <!-- Features List -->
+        <div class="feature-item">
+            📊 Daily Nifty & BankNifty Levels
+        </div>
+        <div class="feature-item">
+            🎓 Educational Market Analysis
+        </div>
+        <div class="feature-item">
+            👥 50,000+ Subscribers Community
+        </div>
+
+        <!-- Bottom CTA -->
+        <button class="cta-btn" style="margin-top: 15px; margin-bottom: 0;" onclick="redirectToTelegram()">
+            Join Free Telegram Channel →
+        </button>
+
+        <!-- Disclaimer -->
+        <p class="disclaimer">
+            <strong>Disclaimer:</strong><br>
+            Market investments are subject to market risks. This channel is for educational purposes only. Please consider your objectives and risk tolerance before making any investment decision.
+        </p>
+
+        <div class="managed-tag">
+            Managed by <span>elite marketing</span>
+        </div>
+    </div>
+
+    <!-- Script Section -->
+    <script>
+        function redirectToTelegram() {
+            // 1. Fire Meta Lead Event
+            if (typeof fbq !== 'undefined') {
+                fbq('track', 'Lead');
+            }
+
+            // 2. Telegram Link Configured
+            var telegramLink = "https://t.me/+Vne6Hc1VFjM5YjE1";
+
+            // 3. User Redirection
+            setTimeout(function() {
+                window.location.href = telegramLink;
+            }, 300);
+        }
+    </script>
 
 </body>
 </html>
